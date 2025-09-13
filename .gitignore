@@ -1,5 +1,4 @@
 # Environment variables
-.env
 
 # ClickHouse data volumes
 clickhouse-data/
@@ -36,7 +35,6 @@ ENV/
 .ipynb_checkpoints
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -49,3 +47,5 @@ Thumbs.db
 Amazon_Fashion.csv
 Amazon_Fashion.jsonl
 Amazon_Fashion.jsonl.gz
+config.bat
+node_modules
