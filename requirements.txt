@@ -1,0 +1,42 @@
+# Core Data Processing
+pandas>=1.5.0
+polars>=0.20.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Database Connectivity
+clickhouse-connect>=0.8.0
+clickhouse-driver>=0.2.0
+clickhouse-sqlalchemy>=0.3.0
+
+# Configuration Management
+python-decouple>=3.6
+
+# Jupyter Notebooks
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# Development Tools
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+
+# Big Data Technologies (for automation design)
+# Note: These are conceptual dependencies for the automation framework
+# apache-airflow>=2.5.0
+# apache-kafka>=3.2.0
+# apache-spark>=3.3.0
+# pyspark>=3.3.0
+
+# File Monitoring (for automation)
+watchdog>=2.1.0
+
+# Logging and Monitoring
+structlog>=22.0.0
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2022.1

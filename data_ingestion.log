@@ -1,0 +1,1608 @@
+2025-09-13 19:59:18,069 - INFO - === Amazon Fashion Reviews Data Ingestion Test ===
+2025-09-13 19:59:18,070 - INFO - Timestamp: 2025-09-13 19:59:18.070072
+2025-09-13 19:59:18,152 - INFO - ✅ ClickHouse connection successful: 1
+2025-09-13 19:59:18,154 - ERROR - ❌ Failed to create schema/table: HTTPDriver for http://localhost:8123 received ClickHouse error code 62
+ Code: 62. DB::Exception: Syntax error: failed at position 8 (SCHEMA): SCHEMA IF NOT EXISTS amazon. Expected one of: OR REPLACE, TEMPORARY, TABLE, DATABASE, sql security, DEFINER, SQL SECURITY, MATERIALIZED, VIEW, DICTIONARY, LIVE, WINDOW, USER, ROLE, QUOTA, POLICY, ROW POLICY, SETTINGS PROFILE, PROFILE, FUNCTION, WORKLOAD, RESOURCE, NAMED COLLECTION, UNIQUE, INDEX. (SYNTAX_ERROR) (version 25.8.2.29 (official build))
+
+2025-09-13 19:59:34,937 - INFO - === Amazon Fashion Reviews Data Ingestion Test ===
+2025-09-13 19:59:34,937 - INFO - Timestamp: 2025-09-13 19:59:34.937284
+2025-09-13 19:59:35,017 - INFO - ✅ ClickHouse connection successful: 1
+2025-09-13 19:59:35,026 - INFO - ✅ Database 'amazon' created
+2025-09-13 19:59:35,042 - INFO - ✅ Table 'amazon.reviews' created
+2025-09-13 19:59:35,042 - INFO - 🚀 Starting sample data ingestion from: Amazon_Fashion.csv
+2025-09-13 19:59:35,058 - INFO - 📊 Loaded 1000 rows for testing
+2025-09-13 19:59:35,060 - INFO - 🧹 Cleared existing data
+2025-09-13 19:59:35,073 - ERROR - ❌ Data ingestion failed: HTTPDriver for http://localhost:8123 received ClickHouse error code 252
+ Code: 252. DB::Exception: Too many partitions for single INSERT block (more than 100). The limit is controlled by 'max_partitions_per_insert_block' setting. Large number of partitions is a common misconception. It will lead to severe negative performance impact, including slow server startup, slow INSERT queries and slow SELECT queries. Recommended total number of partitions for a table is under 1000..10000. Please note, that partitioning is not intended to speed up SELECT queries (ORDER BY key is sufficient to make range queries fast). Partitions are intended for data manipulation (DROP PARTITION, etc). (TOO_MANY_PARTS) (version 25.8.2.29 (official build))
+
+2025-09-13 19:59:35,073 - ERROR - ❌ Sample data ingestion failed!
+2025-09-13 19:59:35,073 - INFO - 🔌 ClickHouse connection closed
+2025-09-13 20:00:53,492 - INFO - === Amazon Fashion Reviews Data Ingestion Test ===
+2025-09-13 20:00:53,492 - INFO - Timestamp: 2025-09-13 20:00:53.492959
+2025-09-13 20:00:53,576 - INFO - ✅ ClickHouse connection successful: 1
+2025-09-13 20:00:53,578 - INFO - ✅ Database 'amazon' created
+2025-09-13 20:00:53,593 - INFO - ✅ Table 'amazon.reviews' created
+2025-09-13 20:00:53,593 - INFO - 🚀 Starting sample data ingestion from: Amazon_Fashion.csv
+2025-09-13 20:00:53,609 - INFO - 📊 Loaded 1000 rows for testing
+2025-09-13 20:00:53,611 - INFO - 🧹 Cleared existing data
+2025-09-13 20:00:53,624 - ERROR - ❌ Data ingestion failed: HTTPDriver for http://localhost:8123 received ClickHouse error code 252
+ Code: 252. DB::Exception: Too many partitions for single INSERT block (more than 100). The limit is controlled by 'max_partitions_per_insert_block' setting. Large number of partitions is a common misconception. It will lead to severe negative performance impact, including slow server startup, slow INSERT queries and slow SELECT queries. Recommended total number of partitions for a table is under 1000..10000. Please note, that partitioning is not intended to speed up SELECT queries (ORDER BY key is sufficient to make range queries fast). Partitions are intended for data manipulation (DROP PARTITION, etc). (TOO_MANY_PARTS) (version 25.8.2.29 (official build))
+
+2025-09-13 20:00:53,624 - ERROR - ❌ Sample data ingestion failed!
+2025-09-13 20:00:53,624 - INFO - 🔌 ClickHouse connection closed
+2025-09-13 20:01:01,791 - INFO - === Amazon Fashion Reviews Data Ingestion Started ===
+2025-09-13 20:01:01,792 - INFO - Timestamp: 2025-09-13 20:01:01.792018
+2025-09-13 20:01:01,792 - INFO - Working directory: /home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT
+2025-09-13 20:01:01,792 - INFO - Setting up ClickHouse connection...
+2025-09-13 20:01:01,794 - INFO - ClickHouse connection established successfully
+2025-09-13 20:01:01,794 - INFO - Creating amazon schema and reviews table...
+2025-09-13 20:01:02,018 - ERROR - Failed to create schema/table: 'NoneType' object has no attribute 'dispose'
+2025-09-13 20:01:02,018 - ERROR - Data ingestion process failed: 'NoneType' object has no attribute 'dispose'
+2025-09-13 20:01:13,186 - INFO - === Amazon Fashion Reviews Data Ingestion Test ===
+2025-09-13 20:01:13,186 - INFO - Timestamp: 2025-09-13 20:01:13.186557
+2025-09-13 20:01:13,268 - INFO - ✅ ClickHouse connection successful: 1
+2025-09-13 20:01:13,270 - INFO - ✅ Database 'amazon' created
+2025-09-13 20:01:13,287 - INFO - ✅ Table 'amazon.reviews' created
+2025-09-13 20:01:13,287 - INFO - 🚀 Starting sample data ingestion from: Amazon_Fashion.csv
+2025-09-13 20:01:13,302 - INFO - 📊 Loaded 1000 rows for testing
+2025-09-13 20:01:13,304 - INFO - 🧹 Cleared existing data
+2025-09-13 20:01:13,323 - INFO - ✅ Inserted 1000 rows successfully
+2025-09-13 20:01:13,326 - INFO - 📊 Total rows in table: 1000
+2025-09-13 20:01:13,326 - INFO - 🎉 Sample data ingestion completed successfully!
+2025-09-13 20:01:13,326 - INFO - 🔌 ClickHouse connection closed
+2025-09-13 20:01:53,337 - INFO - === Amazon Fashion Reviews Data Ingestion Test ===
+2025-09-13 20:01:53,337 - INFO - Timestamp: 2025-09-13 20:01:53.337260
+2025-09-13 20:01:53,421 - INFO - ✅ ClickHouse connection successful: 1
+2025-09-13 20:01:53,423 - INFO - ✅ Database 'amazon' created
+2025-09-13 20:01:53,440 - INFO - ✅ Table 'amazon.reviews' created
+2025-09-13 20:01:53,440 - INFO - 🚀 Starting sample data ingestion from: Amazon_Fashion.csv
+2025-09-13 20:01:53,455 - INFO - 📊 Loaded 1000 rows for testing
+2025-09-13 20:01:53,459 - INFO - 🧹 Cleared existing data
+2025-09-13 20:01:53,475 - INFO - ✅ Inserted 1000 rows successfully
+2025-09-13 20:01:53,479 - INFO - 📊 Total rows in table: 1000
+2025-09-13 20:01:53,479 - INFO - 🎉 Sample data ingestion completed successfully!
+2025-09-13 20:01:53,479 - INFO - 🔌 ClickHouse connection closed
+2025-09-13 20:03:06,276 - INFO - === Amazon Fashion Reviews Data Ingestion Started ===
+2025-09-13 20:03:06,277 - INFO - Timestamp: 2025-09-13 20:03:06.277626
+2025-09-13 20:03:06,277 - INFO - Working directory: /home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT
+2025-09-13 20:03:06,277 - INFO - Setting up ClickHouse connection...
+2025-09-13 20:03:06,300 - INFO - ClickHouse connection established successfully
+2025-09-13 20:03:06,300 - INFO - Creating amazon schema and reviews table...
+2025-09-13 20:03:06,302 - ERROR - Failed to create schema/table: HTTPDriver for http://localhost:8123 received ClickHouse error code 62
+ Code: 62. DB::Exception: Syntax error: failed at position 8 (SCHEMA): SCHEMA IF NOT EXISTS amazon. Expected one of: OR REPLACE, TEMPORARY, TABLE, DATABASE, sql security, DEFINER, SQL SECURITY, MATERIALIZED, VIEW, DICTIONARY, LIVE, WINDOW, USER, ROLE, QUOTA, POLICY, ROW POLICY, SETTINGS PROFILE, PROFILE, FUNCTION, WORKLOAD, RESOURCE, NAMED COLLECTION, UNIQUE, INDEX. (SYNTAX_ERROR) (version 25.8.2.29 (official build))
+
+2025-09-13 20:03:06,302 - ERROR - Data ingestion process failed: HTTPDriver for http://localhost:8123 received ClickHouse error code 62
+ Code: 62. DB::Exception: Syntax error: failed at position 8 (SCHEMA): SCHEMA IF NOT EXISTS amazon. Expected one of: OR REPLACE, TEMPORARY, TABLE, DATABASE, sql security, DEFINER, SQL SECURITY, MATERIALIZED, VIEW, DICTIONARY, LIVE, WINDOW, USER, ROLE, QUOTA, POLICY, ROW POLICY, SETTINGS PROFILE, PROFILE, FUNCTION, WORKLOAD, RESOURCE, NAMED COLLECTION, UNIQUE, INDEX. (SYNTAX_ERROR) (version 25.8.2.29 (official build))
+
+2025-09-13 20:03:41,803 - INFO - === Amazon Fashion Reviews Data Ingestion Started ===
+2025-09-13 20:03:41,804 - INFO - Timestamp: 2025-09-13 20:03:41.804239
+2025-09-13 20:03:41,804 - INFO - Working directory: /home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT
+2025-09-13 20:03:41,804 - INFO - Setting up ClickHouse connection...
+2025-09-13 20:03:41,823 - INFO - ClickHouse connection established successfully
+2025-09-13 20:03:41,823 - INFO - Creating amazon schema and reviews table...
+2025-09-13 20:03:41,825 - INFO - Database 'amazon' created successfully
+2025-09-13 20:03:41,827 - INFO - Dropped existing reviews table
+2025-09-13 20:03:41,841 - INFO - Table 'amazon.reviews' created successfully with optimized schema
+2025-09-13 20:03:41,844 - INFO - Table structure:
+2025-09-13 20:03:41,844 - INFO - [('rating', 'Float32', '', '', '', '', ''), ('title', 'String', '', '', '', '', ''), ('text', 'String', '', '', '', '', ''), ('images', 'String', '', '', '', '', ''), ('asin', 'String', '', '', '', '', ''), ('parent_asin', 'String', '', '', '', '', ''), ('user_id', 'String', '', '', '', '', ''), ('timestamp', 'UInt64', '', '', '', '', ''), ('helpful_vote', 'UInt32', '', '', '', '', ''), ('verified_purchase', 'UInt8', '', '', '', '', ''), ('review_date', 'Date', 'MATERIALIZED', 'toDate(timestamp / 1000)', '', '', ''), ('review_year', 'UInt16', 'MATERIALIZED', 'toYear(toDate(timestamp / 1000))', '', '', ''), ('review_month', 'UInt8', 'MATERIALIZED', 'toMonth(toDate(timestamp / 1000))', '', '', '')]
+2025-09-13 20:03:41,844 - INFO - Starting data ingestion from Amazon_Fashion.csv
+2025-09-13 20:03:41,845 - INFO - Batch size: 50,000 rows
+2025-09-13 20:03:41,845 - INFO - File size: 663.9 MB
+2025-09-13 20:03:42,159 - ERROR - Error processing batch 1: 'verified_purchase'
+2025-09-13 20:03:42,163 - ERROR - Data ingestion failed: 'verified_purchase'
+2025-09-13 20:03:42,163 - ERROR - Data ingestion process failed: 'verified_purchase'
+2025-09-13 20:03:42,826 - INFO - === Amazon Fashion Reviews Data Ingestion ===
+2025-09-13 20:03:42,826 - INFO - Timestamp: 2025-09-13 20:03:42.826326
+2025-09-13 20:03:42,846 - INFO - ✅ ClickHouse connection established: 1
+2025-09-13 20:03:42,847 - INFO - 📋 Creating Amazon database and reviews table...
+2025-09-13 20:03:42,848 - INFO - ✅ Database 'amazon' created successfully
+2025-09-13 20:03:42,863 - INFO - ✅ Table 'amazon.reviews' created successfully
+2025-09-13 20:03:42,866 - INFO - 📊 Table structure:
+2025-09-13 20:03:42,866 - INFO -   - rating: Float32
+2025-09-13 20:03:42,866 - INFO -   - title: String
+2025-09-13 20:03:42,866 - INFO -   - text: String
+2025-09-13 20:03:42,866 - INFO -   - images: String
+2025-09-13 20:03:42,866 - INFO -   - asin: String
+2025-09-13 20:03:42,866 - INFO -   - parent_asin: String
+2025-09-13 20:03:42,866 - INFO -   - user_id: String
+2025-09-13 20:03:42,867 - INFO -   - timestamp: UInt64
+2025-09-13 20:03:42,867 - INFO -   - helpful_vote: UInt32
+2025-09-13 20:03:42,867 - INFO -   - verified_purchase: UInt8
+2025-09-13 20:03:42,867 - INFO -   - created_at: DateTime
+2025-09-13 20:03:42,867 - INFO - 🚀 Starting data ingestion from: Amazon_Fashion.csv
+2025-09-13 20:03:42,867 - INFO - 📁 File size: 663.9 MB
+2025-09-13 20:03:42,867 - INFO - 🧹 Clearing existing data from amazon.reviews...
+2025-09-13 20:03:42,868 - INFO - 📊 Processing data in batches of 50,000 rows...
+2025-09-13 20:03:43,193 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,198 - ERROR - ❌ Error processing batch 1: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,477 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,479 - ERROR - ❌ Error processing batch 2: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,748 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,750 - ERROR - ❌ Error processing batch 3: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,992 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:43,994 - ERROR - ❌ Error processing batch 4: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,255 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,257 - ERROR - ❌ Error processing batch 5: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,492 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,494 - ERROR - ❌ Error processing batch 6: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,739 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:44,740 - ERROR - ❌ Error processing batch 7: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,010 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,012 - ERROR - ❌ Error processing batch 8: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,254 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,256 - ERROR - ❌ Error processing batch 9: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,521 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,522 - ERROR - ❌ Error processing batch 10: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,786 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:45,787 - ERROR - ❌ Error processing batch 11: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,025 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,027 - ERROR - ❌ Error processing batch 12: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,272 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,274 - ERROR - ❌ Error processing batch 13: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,498 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,499 - ERROR - ❌ Error processing batch 14: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,730 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,731 - ERROR - ❌ Error processing batch 15: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,983 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:46,985 - ERROR - ❌ Error processing batch 16: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,230 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,231 - ERROR - ❌ Error processing batch 17: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,467 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,469 - ERROR - ❌ Error processing batch 18: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,743 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,744 - ERROR - ❌ Error processing batch 19: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,982 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:47,983 - ERROR - ❌ Error processing batch 20: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,224 - ERROR - ❌ Error processing batch 21: object of type 'float' has no len()
+2025-09-13 20:03:48,489 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,490 - ERROR - ❌ Error processing batch 22: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,720 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,721 - ERROR - ❌ Error processing batch 23: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,969 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:48,971 - ERROR - ❌ Error processing batch 24: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,199 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,200 - ERROR - ❌ Error processing batch 25: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,456 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,458 - ERROR - ❌ Error processing batch 26: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,757 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,759 - ERROR - ❌ Error processing batch 27: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,989 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:49,991 - ERROR - ❌ Error processing batch 28: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,222 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,223 - ERROR - ❌ Error processing batch 29: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,467 - ERROR - Error serializing column `text` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,469 - ERROR - ❌ Error processing batch 30: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,702 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,704 - ERROR - ❌ Error processing batch 31: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,926 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:50,927 - ERROR - ❌ Error processing batch 32: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,172 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,173 - ERROR - ❌ Error processing batch 33: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,393 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,395 - ERROR - ❌ Error processing batch 34: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,628 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,630 - ERROR - ❌ Error processing batch 35: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,853 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:51,855 - ERROR - ❌ Error processing batch 36: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,083 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,085 - ERROR - ❌ Error processing batch 37: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,345 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,346 - ERROR - ❌ Error processing batch 38: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,565 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,567 - ERROR - ❌ Error processing batch 39: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,784 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:52,785 - ERROR - ❌ Error processing batch 40: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,026 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,028 - ERROR - ❌ Error processing batch 41: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,249 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,251 - ERROR - ❌ Error processing batch 42: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,476 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,477 - ERROR - ❌ Error processing batch 43: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,728 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,729 - ERROR - ❌ Error processing batch 44: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,956 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:53,957 - ERROR - ❌ Error processing batch 45: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,197 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,199 - ERROR - ❌ Error processing batch 46: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,421 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,422 - ERROR - ❌ Error processing batch 47: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,654 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,655 - ERROR - ❌ Error processing batch 48: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,900 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:54,902 - ERROR - ❌ Error processing batch 49: 'float' object has no attribute 'encode'
+2025-09-13 20:03:55,128 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:03:55,130 - ERROR - ❌ Error processing batch 50: 'float' object has no attribute 'encode'
+2025-09-13 20:03:55,147 - INFO - ✅ Batch 51: 939 rows processed | Total: 939
+2025-09-13 20:03:55,147 - INFO - 🎉 Data ingestion completed successfully!
+2025-09-13 20:03:55,147 - INFO - 📊 Total rows processed: 939
+2025-09-13 20:03:55,147 - INFO - 📊 Total batches processed: 51
+2025-09-13 20:03:55,147 - INFO - ✅ Data ingestion completed successfully in 0:00:12.280386
+2025-09-13 20:03:55,147 - INFO - 🔍 Verifying data ingestion...
+2025-09-13 20:03:55,150 - INFO - 📊 Total rows in amazon.reviews: 939
+2025-09-13 20:03:55,154 - INFO - 📋 Sample data:
+2025-09-13 20:03:55,154 - INFO -   Rating: 5.0, ASIN: B0007MV6PO, User: AGVNI43UKK...
+2025-09-13 20:03:55,154 - INFO -   Rating: 4.0, ASIN: B000OVNNS6, User: AGX37L4MHZ...
+2025-09-13 20:03:55,154 - INFO -   Rating: 4.0, ASIN: B000OVNNS6, User: AHE5NTOFRT...
+2025-09-13 20:03:55,154 - INFO -   Rating: 5.0, ASIN: B000OVNNS6, User: AHOWUU6ENI...
+2025-09-13 20:03:55,155 - INFO -   Rating: 3.0, ASIN: B000QH7H0S, User: AG76ZJJVIF...
+2025-09-13 20:03:55,161 - INFO - 📊 Rating distribution:
+2025-09-13 20:03:55,161 - INFO -   Rating 1.0: 184 reviews (19.6%)
+2025-09-13 20:03:55,161 - INFO -   Rating 2.0: 48 reviews (5.11%)
+2025-09-13 20:03:55,161 - INFO -   Rating 3.0: 85 reviews (9.05%)
+2025-09-13 20:03:55,161 - INFO -   Rating 4.0: 148 reviews (15.76%)
+2025-09-13 20:03:55,161 - INFO -   Rating 5.0: 474 reviews (50.48%)
+2025-09-13 20:03:55,166 - INFO - 📊 Verification status:
+2025-09-13 20:03:55,166 - INFO -   Not Verified: 56 reviews (5.96%)
+2025-09-13 20:03:55,166 - INFO -   Verified: 883 reviews (94.04%)
+2025-09-13 20:03:55,166 - INFO - 📋 Data Ingestion Summary:
+2025-09-13 20:03:55,166 - INFO - ✅ Database: amazon
+2025-09-13 20:03:55,166 - INFO - ✅ Table: reviews
+2025-09-13 20:03:55,166 - INFO - ✅ Engine: MergeTree
+2025-09-13 20:03:55,166 - INFO - ✅ Ordering: (asin, timestamp)
+2025-09-13 20:03:55,166 - INFO - ✅ Log file: data_ingestion.log
+2025-09-13 20:03:55,166 - INFO - 🔌 ClickHouse connection closed
+2025-09-13 20:03:55,166 - INFO - === Amazon Fashion Reviews Data Ingestion Completed ===
+2025-09-13 20:04:31,916 - INFO - 📁 Data file found: Amazon_Fashion.csv (663.9 MB)
+2025-09-13 20:04:31,921 - INFO - 📋 Data structure verified - 10 columns
+2025-09-13 20:04:31,922 - INFO - 📋 Columns: ['rating', 'title', 'text', 'images', 'asin', 'parent_asin', 'user_id', 'timestamp', 'helpful_vote', 'verified_purchase']
+2025-09-13 20:04:31,922 - INFO - ============================================================
+2025-09-13 20:04:31,922 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 20:04:31,922 - INFO - ============================================================
+2025-09-13 20:04:31,938 - INFO - ✅ ClickHouse connection established
+2025-09-13 20:04:31,941 - INFO - ✅ Amazon database created successfully
+2025-09-13 20:04:31,943 - INFO - ✅ Reviews table created successfully with optimized schema
+2025-09-13 20:04:31,943 - INFO - 📊 Table features:
+2025-09-13 20:04:31,943 - INFO -    - Engine: MergeTree (optimized for analytics)
+2025-09-13 20:04:31,943 - INFO -    - Ordering: (asin, review_date) for efficient queries
+2025-09-13 20:04:31,943 - INFO -    - Materialized columns: review_date, review_year, review_month
+2025-09-13 20:04:31,943 - INFO - 🚀 Starting data ingestion...
+2025-09-13 20:04:31,943 - INFO - 📊 Batch size: 50,000 rows
+2025-09-13 20:04:32,271 - ERROR - Error serializing column `title` into data type `String`
+Traceback (most recent call last):
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/transform.py", line 99, in chunk_gen
+    col_type.write_column(data, output, context)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 214, in write_column
+    self.write_column_data(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/base.py", line 229, in write_column_data
+    self._write_column_binary(column, dest, ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/datatypes/string.py", line 50, in _write_column_binary
+    handle_error(data_conv.write_str_col(column, self.nullable, encoding, dest), ctx)
+  File "/home/ubuntu/LONGIN-DUSENGEYEZU-ASSIGNEMNT/myenv/lib/python3.10/site-packages/clickhouse_connect/driver/dataconv.py", line 123, in write_str_col
+    x = x.encode(encoding)
+AttributeError: 'float' object has no attribute 'encode'
+2025-09-13 20:04:32,277 - ERROR - ❌ Error processing batch 1: 'float' object has no attribute 'encode'
+2025-09-13 20:04:32,277 - ERROR - 📊 Failed batch size: 50,000 rows
+2025-09-13 20:04:32,277 - ERROR - ❌ Critical error during ingestion: 'float' object has no attribute 'encode'
+2025-09-13 20:04:32,277 - ERROR - 📊 Rows processed before failure: 0
+2025-09-13 20:04:32,277 - ERROR - 💥 INGESTION FAILED: 'float' object has no attribute 'encode'
+2025-09-13 20:04:47,080 - INFO - 📁 Data file found: Amazon_Fashion.csv (663.9 MB)
+2025-09-13 20:04:47,086 - INFO - 📋 Data structure verified - 10 columns
+2025-09-13 20:04:47,086 - INFO - 📋 Columns: ['rating', 'title', 'text', 'images', 'asin', 'parent_asin', 'user_id', 'timestamp', 'helpful_vote', 'verified_purchase']
+2025-09-13 20:04:47,086 - INFO - ============================================================
+2025-09-13 20:04:47,086 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 20:04:47,086 - INFO - ============================================================
+2025-09-13 20:04:47,101 - INFO - ✅ ClickHouse connection established
+2025-09-13 20:04:47,103 - INFO - ✅ Amazon database created successfully
+2025-09-13 20:04:47,106 - INFO - ✅ Reviews table created successfully with optimized schema
+2025-09-13 20:04:47,106 - INFO - 📊 Table features:
+2025-09-13 20:04:47,106 - INFO -    - Engine: MergeTree (optimized for analytics)
+2025-09-13 20:04:47,106 - INFO -    - Ordering: (asin, review_date) for efficient queries
+2025-09-13 20:04:47,106 - INFO -    - Materialized columns: review_date, review_year, review_month
+2025-09-13 20:04:47,106 - INFO - 🚀 Starting data ingestion...
+2025-09-13 20:04:47,106 - INFO - 📊 Batch size: 50,000 rows
+2025-09-13 20:04:47,720 - INFO - ✅ Batch 1: 50,000 rows processed in 0.31s
+2025-09-13 20:04:47,720 - INFO - 📈 Total progress: 50,000 rows
+2025-09-13 20:04:48,283 - INFO - ✅ Batch 2: 50,000 rows processed in 0.30s
+2025-09-13 20:04:48,283 - INFO - 📈 Total progress: 100,000 rows
+2025-09-13 20:04:48,821 - INFO - ✅ Batch 3: 50,000 rows processed in 0.29s
+2025-09-13 20:04:48,821 - INFO - 📈 Total progress: 150,000 rows
+2025-09-13 20:04:49,363 - INFO - ✅ Batch 4: 50,000 rows processed in 0.29s
+2025-09-13 20:04:49,363 - INFO - 📈 Total progress: 200,000 rows
+2025-09-13 20:04:49,906 - INFO - ✅ Batch 5: 50,000 rows processed in 0.29s
+2025-09-13 20:04:49,907 - INFO - 📈 Total progress: 250,000 rows
+2025-09-13 20:04:50,446 - INFO - ✅ Batch 6: 50,000 rows processed in 0.29s
+2025-09-13 20:04:50,446 - INFO - 📈 Total progress: 300,000 rows
+2025-09-13 20:04:50,972 - INFO - ✅ Batch 7: 50,000 rows processed in 0.28s
+2025-09-13 20:04:50,972 - INFO - 📈 Total progress: 350,000 rows
+2025-09-13 20:04:51,482 - INFO - ✅ Batch 8: 50,000 rows processed in 0.27s
+2025-09-13 20:04:51,482 - INFO - 📈 Total progress: 400,000 rows
+2025-09-13 20:04:52,010 - INFO - ✅ Batch 9: 50,000 rows processed in 0.29s
+2025-09-13 20:04:52,010 - INFO - 📈 Total progress: 450,000 rows
+2025-09-13 20:04:52,570 - INFO - ✅ Batch 10: 50,000 rows processed in 0.31s
+2025-09-13 20:04:52,571 - INFO - 📈 Total progress: 500,000 rows
+2025-09-13 20:04:53,077 - INFO - ✅ Batch 11: 50,000 rows processed in 0.27s
+2025-09-13 20:04:53,077 - INFO - 📈 Total progress: 550,000 rows
+2025-09-13 20:04:53,592 - INFO - ✅ Batch 12: 50,000 rows processed in 0.28s
+2025-09-13 20:04:53,592 - INFO - 📈 Total progress: 600,000 rows
+2025-09-13 20:04:54,079 - INFO - ✅ Batch 13: 50,000 rows processed in 0.26s
+2025-09-13 20:04:54,079 - INFO - 📈 Total progress: 650,000 rows
+2025-09-13 20:04:54,582 - INFO - ✅ Batch 14: 50,000 rows processed in 0.28s
+2025-09-13 20:04:54,582 - INFO - 📈 Total progress: 700,000 rows
+2025-09-13 20:04:55,085 - INFO - ✅ Batch 15: 50,000 rows processed in 0.27s
+2025-09-13 20:04:55,085 - INFO - 📈 Total progress: 750,000 rows
+2025-09-13 20:04:55,592 - INFO - ✅ Batch 16: 50,000 rows processed in 0.27s
+2025-09-13 20:04:55,593 - INFO - 📈 Total progress: 800,000 rows
+2025-09-13 20:04:56,132 - INFO - ✅ Batch 17: 50,000 rows processed in 0.29s
+2025-09-13 20:04:56,132 - INFO - 📈 Total progress: 850,000 rows
+2025-09-13 20:04:56,660 - INFO - ✅ Batch 18: 50,000 rows processed in 0.29s
+2025-09-13 20:04:56,660 - INFO - 📈 Total progress: 900,000 rows
+2025-09-13 20:04:57,318 - INFO - ✅ Batch 19: 50,000 rows processed in 0.29s
+2025-09-13 20:04:57,318 - INFO - 📈 Total progress: 950,000 rows
+2025-09-13 20:04:57,834 - INFO - ✅ Batch 20: 50,000 rows processed in 0.28s
+2025-09-13 20:04:57,835 - INFO - 📈 Total progress: 1,000,000 rows
+2025-09-13 20:04:58,355 - INFO - ✅ Batch 21: 50,000 rows processed in 0.29s
+2025-09-13 20:04:58,355 - INFO - 📈 Total progress: 1,050,000 rows
+2025-09-13 20:04:58,843 - INFO - ✅ Batch 22: 50,000 rows processed in 0.27s
+2025-09-13 20:04:58,843 - INFO - 📈 Total progress: 1,100,000 rows
+2025-09-13 20:04:59,335 - INFO - ✅ Batch 23: 50,000 rows processed in 0.27s
+2025-09-13 20:04:59,335 - INFO - 📈 Total progress: 1,150,000 rows
+2025-09-13 20:04:59,846 - INFO - ✅ Batch 24: 50,000 rows processed in 0.26s
+2025-09-13 20:04:59,846 - INFO - 📈 Total progress: 1,200,000 rows
+2025-09-13 20:05:00,349 - INFO - ✅ Batch 25: 50,000 rows processed in 0.27s
+2025-09-13 20:05:00,349 - INFO - 📈 Total progress: 1,250,000 rows
+2025-09-13 20:05:00,874 - INFO - ✅ Batch 26: 50,000 rows processed in 0.27s
+2025-09-13 20:05:00,874 - INFO - 📈 Total progress: 1,300,000 rows
+2025-09-13 20:05:01,382 - INFO - ✅ Batch 27: 50,000 rows processed in 0.27s
+2025-09-13 20:05:01,383 - INFO - 📈 Total progress: 1,350,000 rows
+2025-09-13 20:05:01,872 - INFO - ✅ Batch 28: 50,000 rows processed in 0.25s
+2025-09-13 20:05:01,872 - INFO - 📈 Total progress: 1,400,000 rows
+2025-09-13 20:05:02,372 - INFO - ✅ Batch 29: 50,000 rows processed in 0.27s
+2025-09-13 20:05:02,373 - INFO - 📈 Total progress: 1,450,000 rows
+2025-09-13 20:05:02,870 - INFO - ✅ Batch 30: 50,000 rows processed in 0.26s
+2025-09-13 20:05:02,871 - INFO - 📈 Total progress: 1,500,000 rows
+2025-09-13 20:05:03,375 - INFO - ✅ Batch 31: 50,000 rows processed in 0.27s
+2025-09-13 20:05:03,375 - INFO - 📈 Total progress: 1,550,000 rows
+2025-09-13 20:05:03,862 - INFO - ✅ Batch 32: 50,000 rows processed in 0.26s
+2025-09-13 20:05:03,862 - INFO - 📈 Total progress: 1,600,000 rows
+2025-09-13 20:05:04,349 - INFO - ✅ Batch 33: 50,000 rows processed in 0.25s
+2025-09-13 20:05:04,349 - INFO - 📈 Total progress: 1,650,000 rows
+2025-09-13 20:05:04,832 - INFO - ✅ Batch 34: 50,000 rows processed in 0.26s
+2025-09-13 20:05:04,832 - INFO - 📈 Total progress: 1,700,000 rows
+2025-09-13 20:05:05,315 - INFO - ✅ Batch 35: 50,000 rows processed in 0.25s
+2025-09-13 20:05:05,315 - INFO - 📈 Total progress: 1,750,000 rows
+2025-09-13 20:05:05,797 - INFO - ✅ Batch 36: 50,000 rows processed in 0.25s
+2025-09-13 20:05:05,797 - INFO - 📈 Total progress: 1,800,000 rows
+2025-09-13 20:05:06,277 - INFO - ✅ Batch 37: 50,000 rows processed in 0.25s
+2025-09-13 20:05:06,277 - INFO - 📈 Total progress: 1,850,000 rows
+2025-09-13 20:05:06,780 - INFO - ✅ Batch 38: 50,000 rows processed in 0.26s
+2025-09-13 20:05:06,780 - INFO - 📈 Total progress: 1,900,000 rows
+2025-09-13 20:05:07,279 - INFO - ✅ Batch 39: 50,000 rows processed in 0.27s
+2025-09-13 20:05:07,279 - INFO - 📈 Total progress: 1,950,000 rows
+2025-09-13 20:05:07,918 - INFO - ✅ Batch 40: 50,000 rows processed in 0.27s
+2025-09-13 20:05:07,918 - INFO - 📈 Total progress: 2,000,000 rows
+2025-09-13 20:05:08,393 - INFO - ✅ Batch 41: 50,000 rows processed in 0.27s
+2025-09-13 20:05:08,393 - INFO - 📈 Total progress: 2,050,000 rows
+2025-09-13 20:05:08,859 - INFO - ✅ Batch 42: 50,000 rows processed in 0.25s
+2025-09-13 20:05:08,859 - INFO - 📈 Total progress: 2,100,000 rows
+2025-09-13 20:05:09,328 - INFO - ✅ Batch 43: 50,000 rows processed in 0.26s
+2025-09-13 20:05:09,328 - INFO - 📈 Total progress: 2,150,000 rows
+2025-09-13 20:05:09,792 - INFO - ✅ Batch 44: 50,000 rows processed in 0.25s
+2025-09-13 20:05:09,792 - INFO - 📈 Total progress: 2,200,000 rows
+2025-09-13 20:05:10,265 - INFO - ✅ Batch 45: 50,000 rows processed in 0.26s
+2025-09-13 20:05:10,266 - INFO - 📈 Total progress: 2,250,000 rows
+2025-09-13 20:05:10,739 - INFO - ✅ Batch 46: 50,000 rows processed in 0.26s
+2025-09-13 20:05:10,739 - INFO - 📈 Total progress: 2,300,000 rows
+2025-09-13 20:05:11,196 - INFO - ✅ Batch 47: 50,000 rows processed in 0.25s
+2025-09-13 20:05:11,196 - INFO - 📈 Total progress: 2,350,000 rows
+2025-09-13 20:05:11,658 - INFO - ✅ Batch 48: 50,000 rows processed in 0.25s
+2025-09-13 20:05:11,659 - INFO - 📈 Total progress: 2,400,000 rows
+2025-09-13 20:05:12,131 - INFO - ✅ Batch 49: 50,000 rows processed in 0.25s
+2025-09-13 20:05:12,131 - INFO - 📈 Total progress: 2,450,000 rows
+2025-09-13 20:05:12,606 - INFO - ✅ Batch 50: 50,000 rows processed in 0.25s
+2025-09-13 20:05:12,606 - INFO - 📈 Total progress: 2,500,000 rows
+2025-09-13 20:05:12,623 - INFO - ✅ Batch 51: 939 rows processed in 0.01s
+2025-09-13 20:05:12,624 - INFO - 📈 Total progress: 2,500,939 rows
+2025-09-13 20:05:12,624 - INFO - 🎉 Data ingestion completed successfully!
+2025-09-13 20:05:12,624 - INFO - 📊 Total rows processed: 2,500,939
+2025-09-13 20:05:12,624 - INFO - ⏱️ Total time: 25.52 seconds
+2025-09-13 20:05:12,624 - INFO - 🚀 Average speed: 98009 rows/second
+2025-09-13 20:05:12,624 - INFO - 🔍 VERIFYING DATA INGESTION...
+2025-09-13 20:05:12,624 - INFO - ==================================================
+2025-09-13 20:05:12,627 - INFO - ✅ Query 1: [(2501939,)]
+2025-09-13 20:05:12,734 - INFO - ✅ Query 2: [(874297,)]
+2025-09-13 20:05:12,851 - INFO - ✅ Query 3: [(2035490,)]
+2025-09-13 20:05:12,862 - INFO - ✅ Query 4: [(3.9695264352967836,)]
+2025-09-13 20:05:12,866 - ERROR - ❌ Query 5 failed: HTTPDriver for http://localhost:8123 received ClickHouse error code 47
+ Code: 47. DB::Exception: Unknown expression or function identifier `review_date` in scope SELECT MIN(review_date) AS earliest_review, MAX(review_date) AS latest_review FROM amazon.reviews. (UNKNOWN_IDENTIFIER) (version 25.8.2.29 (official build))
+
+2025-09-13 20:05:12,869 - ERROR - ❌ Query 6 failed: HTTPDriver for http://localhost:8123 received ClickHouse error code 47
+ Code: 47. DB::Exception: Unknown expression identifier `review_year` in scope SELECT review_year, COUNT(*) AS reviews_count FROM amazon.reviews GROUP BY review_year ORDER BY review_year ASC. (UNKNOWN_IDENTIFIER) (version 25.8.2.29 (official build))
+
+2025-09-13 20:05:12,869 - INFO - ==================================================
+2025-09-13 20:05:12,869 - INFO - 🎉 DATA VERIFICATION COMPLETED
+2025-09-13 20:05:12,869 - INFO - ============================================================
+2025-09-13 20:05:12,869 - INFO - 🎯 AMAZON FASHION REVIEWS DATA INGESTION COMPLETED
+2025-09-13 20:05:12,869 - INFO - ============================================================
+2025-09-13 20:05:12,869 - INFO - 📊 Database: amazon
+2025-09-13 20:05:12,869 - INFO - 📊 Table: reviews
+2025-09-13 20:05:12,869 - INFO - 📊 Total records: 2,500,939
+2025-09-13 20:05:12,869 - INFO - 📊 File processed: Amazon_Fashion.csv
+2025-09-13 20:05:12,869 - INFO - 📊 Log file: data_ingestion.log
+2025-09-13 20:05:12,869 - INFO - ============================================================
+2025-09-13 20:06:09,750 - INFO - ✅ ClickHouse connection initialized
+2025-09-13 20:11:04,505 - INFO - Testing ClickHouse connection...
+2025-09-13 20:11:04,510 - INFO - ✅ Connection successful: 1
+2025-09-13 20:11:04,510 - INFO - Creating amazon schema...
+2025-09-13 20:11:04,513 - INFO - ✅ Amazon schema created successfully
+2025-09-13 20:11:04,513 - INFO - Creating reviews table...
+2025-09-13 20:11:04,517 - INFO - ✅ Reviews table created successfully
+2025-09-13 20:11:04,517 - INFO - Verifying table creation...
+2025-09-13 20:11:04,520 - INFO - ✅ Tables in amazon schema: reviews
+2025-09-13 20:11:04,520 - INFO - 🚀 Starting data ingestion from Amazon_Fashion.csv
+2025-09-13 20:11:04,520 - INFO - 📊 Batch size: 10,000 rows
+2025-09-13 20:11:04,520 - INFO - 📁 File size: 663.9 MB
+2025-09-13 20:11:04,729 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:04,729 - ERROR - ❌ Error processing batch 1: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:04,887 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:04,887 - ERROR - ❌ Error processing batch 2: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,024 - ERROR - Error inserting data: 500 Server Error: Internal Server Error for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,025 - ERROR - ❌ Error processing batch 3: 500 Server Error: Internal Server Error for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,152 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,153 - ERROR - ❌ Error processing batch 4: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,282 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,282 - ERROR - ❌ Error processing batch 5: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,415 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,415 - ERROR - ❌ Error processing batch 6: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,550 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,550 - ERROR - ❌ Error processing batch 7: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,682 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,683 - ERROR - ❌ Error processing batch 8: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,813 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,813 - ERROR - ❌ Error processing batch 9: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,943 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:05,943 - ERROR - ❌ Error processing batch 10: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,067 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,067 - ERROR - ❌ Error processing batch 11: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,193 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,193 - ERROR - ❌ Error processing batch 12: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,322 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,322 - ERROR - ❌ Error processing batch 13: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,449 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,449 - ERROR - ❌ Error processing batch 14: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,579 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,579 - ERROR - ❌ Error processing batch 15: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,704 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,705 - ERROR - ❌ Error processing batch 16: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,828 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,828 - ERROR - ❌ Error processing batch 17: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,949 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:06,950 - ERROR - ❌ Error processing batch 18: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,084 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,084 - ERROR - ❌ Error processing batch 19: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,213 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,213 - ERROR - ❌ Error processing batch 20: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,338 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,338 - ERROR - ❌ Error processing batch 21: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,461 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,461 - ERROR - ❌ Error processing batch 22: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,583 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,583 - ERROR - ❌ Error processing batch 23: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,709 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,709 - ERROR - ❌ Error processing batch 24: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,830 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,830 - ERROR - ❌ Error processing batch 25: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,942 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:07,942 - ERROR - ❌ Error processing batch 26: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,068 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,068 - ERROR - ❌ Error processing batch 27: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,196 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,196 - ERROR - ❌ Error processing batch 28: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,324 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,324 - ERROR - ❌ Error processing batch 29: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,453 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,453 - ERROR - ❌ Error processing batch 30: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,578 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,578 - ERROR - ❌ Error processing batch 31: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,706 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,706 - ERROR - ❌ Error processing batch 32: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,822 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,823 - ERROR - ❌ Error processing batch 33: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,948 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:08,948 - ERROR - ❌ Error processing batch 34: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,075 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,075 - ERROR - ❌ Error processing batch 35: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,203 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,203 - ERROR - ❌ Error processing batch 36: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,329 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,330 - ERROR - ❌ Error processing batch 37: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,455 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,455 - ERROR - ❌ Error processing batch 38: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,583 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,583 - ERROR - ❌ Error processing batch 39: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,704 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,705 - ERROR - ❌ Error processing batch 40: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,828 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,828 - ERROR - ❌ Error processing batch 41: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,953 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:09,954 - ERROR - ❌ Error processing batch 42: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,071 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,072 - ERROR - ❌ Error processing batch 43: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,203 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,204 - ERROR - ❌ Error processing batch 44: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,334 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,334 - ERROR - ❌ Error processing batch 45: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,486 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,486 - ERROR - ❌ Error processing batch 46: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,624 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,624 - ERROR - ❌ Error processing batch 47: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,759 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,759 - ERROR - ❌ Error processing batch 48: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:10,905 - INFO - ✅ Batch 49: 10,000 rows inserted in 0.10s
+2025-09-13 20:11:11,030 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,031 - ERROR - ❌ Error processing batch 50: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,157 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,157 - ERROR - ❌ Error processing batch 51: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,280 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,280 - ERROR - ❌ Error processing batch 52: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,404 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,404 - ERROR - ❌ Error processing batch 53: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,524 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,524 - ERROR - ❌ Error processing batch 54: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,646 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,646 - ERROR - ❌ Error processing batch 55: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,768 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,768 - ERROR - ❌ Error processing batch 56: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,893 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:11,893 - ERROR - ❌ Error processing batch 57: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,017 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,017 - ERROR - ❌ Error processing batch 58: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,138 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,138 - ERROR - ❌ Error processing batch 59: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,263 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,263 - ERROR - ❌ Error processing batch 60: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,387 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,387 - ERROR - ❌ Error processing batch 61: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,510 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,510 - ERROR - ❌ Error processing batch 62: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,634 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,634 - ERROR - ❌ Error processing batch 63: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,753 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,753 - ERROR - ❌ Error processing batch 64: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,869 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,869 - ERROR - ❌ Error processing batch 65: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,987 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:12,987 - ERROR - ❌ Error processing batch 66: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,106 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,107 - ERROR - ❌ Error processing batch 67: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,229 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,229 - ERROR - ❌ Error processing batch 68: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,349 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,349 - ERROR - ❌ Error processing batch 69: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,472 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,472 - ERROR - ❌ Error processing batch 70: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,597 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,598 - ERROR - ❌ Error processing batch 71: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,718 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,719 - ERROR - ❌ Error processing batch 72: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,844 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,844 - ERROR - ❌ Error processing batch 73: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,969 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:13,969 - ERROR - ❌ Error processing batch 74: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,093 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,093 - ERROR - ❌ Error processing batch 75: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,220 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,220 - ERROR - ❌ Error processing batch 76: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,336 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,337 - ERROR - ❌ Error processing batch 77: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,461 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,461 - ERROR - ❌ Error processing batch 78: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,587 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,589 - ERROR - ❌ Error processing batch 79: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,713 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,713 - ERROR - ❌ Error processing batch 80: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,834 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,834 - ERROR - ❌ Error processing batch 81: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,958 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:14,958 - ERROR - ❌ Error processing batch 82: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,099 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,099 - ERROR - ❌ Error processing batch 83: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,245 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,245 - ERROR - ❌ Error processing batch 84: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,369 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,369 - ERROR - ❌ Error processing batch 85: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,490 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,490 - ERROR - ❌ Error processing batch 86: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,616 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,616 - ERROR - ❌ Error processing batch 87: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,731 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,731 - ERROR - ❌ Error processing batch 88: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,854 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,854 - ERROR - ❌ Error processing batch 89: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,977 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:15,977 - ERROR - ❌ Error processing batch 90: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,101 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,101 - ERROR - ❌ Error processing batch 91: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,223 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,224 - ERROR - ❌ Error processing batch 92: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,350 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,350 - ERROR - ❌ Error processing batch 93: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,471 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,471 - ERROR - ❌ Error processing batch 94: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,594 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,594 - ERROR - ❌ Error processing batch 95: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,719 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,720 - ERROR - ❌ Error processing batch 96: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,841 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,842 - ERROR - ❌ Error processing batch 97: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,963 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:16,964 - ERROR - ❌ Error processing batch 98: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,090 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,090 - ERROR - ❌ Error processing batch 99: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,230 - INFO - ✅ Batch 100: 10,000 rows inserted in 0.09s
+2025-09-13 20:11:17,230 - INFO - 📈 Progress: 20,000 rows processed (1574 rows/sec)
+2025-09-13 20:11:17,373 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,373 - ERROR - ❌ Error processing batch 101: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,498 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,498 - ERROR - ❌ Error processing batch 102: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,623 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,624 - ERROR - ❌ Error processing batch 103: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,748 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,748 - ERROR - ❌ Error processing batch 104: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,867 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,867 - ERROR - ❌ Error processing batch 105: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,990 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:17,991 - ERROR - ❌ Error processing batch 106: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,112 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,112 - ERROR - ❌ Error processing batch 107: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,235 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,235 - ERROR - ❌ Error processing batch 108: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,358 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,358 - ERROR - ❌ Error processing batch 109: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,483 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,484 - ERROR - ❌ Error processing batch 110: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,608 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,608 - ERROR - ❌ Error processing batch 111: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,740 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,740 - ERROR - ❌ Error processing batch 112: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,863 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,863 - ERROR - ❌ Error processing batch 113: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,989 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:18,989 - ERROR - ❌ Error processing batch 114: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,109 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,109 - ERROR - ❌ Error processing batch 115: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,230 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,230 - ERROR - ❌ Error processing batch 116: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,356 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,357 - ERROR - ❌ Error processing batch 117: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,483 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,483 - ERROR - ❌ Error processing batch 118: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,605 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,605 - ERROR - ❌ Error processing batch 119: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,732 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,732 - ERROR - ❌ Error processing batch 120: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,858 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,858 - ERROR - ❌ Error processing batch 121: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,979 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:19,979 - ERROR - ❌ Error processing batch 122: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,101 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,101 - ERROR - ❌ Error processing batch 123: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,233 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,233 - ERROR - ❌ Error processing batch 124: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,354 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,354 - ERROR - ❌ Error processing batch 125: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,487 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,487 - ERROR - ❌ Error processing batch 126: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,618 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,618 - ERROR - ❌ Error processing batch 127: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,774 - INFO - ✅ Batch 128: 10,000 rows inserted in 0.10s
+2025-09-13 20:11:20,894 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:20,894 - ERROR - ❌ Error processing batch 129: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,015 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,016 - ERROR - ❌ Error processing batch 130: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,138 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,138 - ERROR - ❌ Error processing batch 131: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,261 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,261 - ERROR - ❌ Error processing batch 132: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,383 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,383 - ERROR - ❌ Error processing batch 133: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,511 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,511 - ERROR - ❌ Error processing batch 134: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,644 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,645 - ERROR - ❌ Error processing batch 135: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,774 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,774 - ERROR - ❌ Error processing batch 136: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,897 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:21,897 - ERROR - ❌ Error processing batch 137: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,016 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,016 - ERROR - ❌ Error processing batch 138: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,134 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,134 - ERROR - ❌ Error processing batch 139: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,253 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,253 - ERROR - ❌ Error processing batch 140: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,378 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,378 - ERROR - ❌ Error processing batch 141: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,505 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,505 - ERROR - ❌ Error processing batch 142: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,628 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,628 - ERROR - ❌ Error processing batch 143: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,752 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,752 - ERROR - ❌ Error processing batch 144: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,873 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:22,873 - ERROR - ❌ Error processing batch 145: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,002 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,002 - ERROR - ❌ Error processing batch 146: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,122 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,122 - ERROR - ❌ Error processing batch 147: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,244 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,244 - ERROR - ❌ Error processing batch 148: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,375 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,375 - ERROR - ❌ Error processing batch 149: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,498 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,498 - ERROR - ❌ Error processing batch 150: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,626 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,626 - ERROR - ❌ Error processing batch 151: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,749 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,749 - ERROR - ❌ Error processing batch 152: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,874 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,874 - ERROR - ❌ Error processing batch 153: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,998 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:23,999 - ERROR - ❌ Error processing batch 154: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,118 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,119 - ERROR - ❌ Error processing batch 155: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,237 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,237 - ERROR - ❌ Error processing batch 156: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,356 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,356 - ERROR - ❌ Error processing batch 157: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,481 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,482 - ERROR - ❌ Error processing batch 158: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,607 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,607 - ERROR - ❌ Error processing batch 159: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,730 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,730 - ERROR - ❌ Error processing batch 160: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,865 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,865 - ERROR - ❌ Error processing batch 161: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,982 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:24,983 - ERROR - ❌ Error processing batch 162: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,102 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,102 - ERROR - ❌ Error processing batch 163: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,223 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,223 - ERROR - ❌ Error processing batch 164: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,341 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,341 - ERROR - ❌ Error processing batch 165: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,461 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,461 - ERROR - ❌ Error processing batch 166: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,584 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,584 - ERROR - ❌ Error processing batch 167: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,707 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,707 - ERROR - ❌ Error processing batch 168: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,829 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,829 - ERROR - ❌ Error processing batch 169: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,954 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:25,954 - ERROR - ❌ Error processing batch 170: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,077 - ERROR - Error inserting data: 500 Server Error: Internal Server Error for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,077 - ERROR - ❌ Error processing batch 171: 500 Server Error: Internal Server Error for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,199 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,199 - ERROR - ❌ Error processing batch 172: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,317 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,317 - ERROR - ❌ Error processing batch 173: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,438 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,438 - ERROR - ❌ Error processing batch 174: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,559 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,559 - ERROR - ❌ Error processing batch 175: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,681 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,681 - ERROR - ❌ Error processing batch 176: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,801 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,801 - ERROR - ❌ Error processing batch 177: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,920 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:26,920 - ERROR - ❌ Error processing batch 178: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,039 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,039 - ERROR - ❌ Error processing batch 179: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,165 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,165 - ERROR - ❌ Error processing batch 180: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,287 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,288 - ERROR - ❌ Error processing batch 181: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,414 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,415 - ERROR - ❌ Error processing batch 182: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,538 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,538 - ERROR - ❌ Error processing batch 183: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,654 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,655 - ERROR - ❌ Error processing batch 184: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,777 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,777 - ERROR - ❌ Error processing batch 185: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,898 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:27,898 - ERROR - ❌ Error processing batch 186: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,055 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,056 - ERROR - ❌ Error processing batch 187: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,174 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,174 - ERROR - ❌ Error processing batch 188: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,295 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,296 - ERROR - ❌ Error processing batch 189: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,414 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,414 - ERROR - ❌ Error processing batch 190: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,532 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,532 - ERROR - ❌ Error processing batch 191: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,654 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,655 - ERROR - ❌ Error processing batch 192: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,770 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,770 - ERROR - ❌ Error processing batch 193: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,888 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:28,888 - ERROR - ❌ Error processing batch 194: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,011 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,012 - ERROR - ❌ Error processing batch 195: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,133 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,133 - ERROR - ❌ Error processing batch 196: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,255 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,256 - ERROR - ❌ Error processing batch 197: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,378 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,378 - ERROR - ❌ Error processing batch 198: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,507 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,507 - ERROR - ❌ Error processing batch 199: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,627 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,628 - ERROR - ❌ Error processing batch 200: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,748 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,748 - ERROR - ❌ Error processing batch 201: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,870 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,870 - ERROR - ❌ Error processing batch 202: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,992 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:29,992 - ERROR - ❌ Error processing batch 203: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,110 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,110 - ERROR - ❌ Error processing batch 204: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,229 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,229 - ERROR - ❌ Error processing batch 205: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,348 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,348 - ERROR - ❌ Error processing batch 206: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,462 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,462 - ERROR - ❌ Error processing batch 207: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,585 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,585 - ERROR - ❌ Error processing batch 208: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,707 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,707 - ERROR - ❌ Error processing batch 209: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,828 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,829 - ERROR - ❌ Error processing batch 210: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,946 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:30,946 - ERROR - ❌ Error processing batch 211: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,065 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,065 - ERROR - ❌ Error processing batch 212: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,187 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,187 - ERROR - ❌ Error processing batch 213: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,302 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,302 - ERROR - ❌ Error processing batch 214: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,422 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,422 - ERROR - ❌ Error processing batch 215: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,545 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,545 - ERROR - ❌ Error processing batch 216: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,667 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,667 - ERROR - ❌ Error processing batch 217: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,787 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,787 - ERROR - ❌ Error processing batch 218: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,906 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:31,906 - ERROR - ❌ Error processing batch 219: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,025 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,025 - ERROR - ❌ Error processing batch 220: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,146 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,146 - ERROR - ❌ Error processing batch 221: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,268 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,268 - ERROR - ❌ Error processing batch 222: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,390 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,390 - ERROR - ❌ Error processing batch 223: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,512 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,512 - ERROR - ❌ Error processing batch 224: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,635 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,635 - ERROR - ❌ Error processing batch 225: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,759 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,759 - ERROR - ❌ Error processing batch 226: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,879 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:32,880 - ERROR - ❌ Error processing batch 227: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,000 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,000 - ERROR - ❌ Error processing batch 228: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,117 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,117 - ERROR - ❌ Error processing batch 229: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,237 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,237 - ERROR - ❌ Error processing batch 230: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,355 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,355 - ERROR - ❌ Error processing batch 231: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,474 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,474 - ERROR - ❌ Error processing batch 232: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,596 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,596 - ERROR - ❌ Error processing batch 233: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,715 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,716 - ERROR - ❌ Error processing batch 234: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,833 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,834 - ERROR - ❌ Error processing batch 235: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,952 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:33,952 - ERROR - ❌ Error processing batch 236: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,074 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,074 - ERROR - ❌ Error processing batch 237: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,198 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,198 - ERROR - ❌ Error processing batch 238: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,319 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,320 - ERROR - ❌ Error processing batch 239: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,439 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,439 - ERROR - ❌ Error processing batch 240: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,559 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,559 - ERROR - ❌ Error processing batch 241: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,676 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,676 - ERROR - ❌ Error processing batch 242: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,798 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,798 - ERROR - ❌ Error processing batch 243: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,918 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:34,918 - ERROR - ❌ Error processing batch 244: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,037 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,037 - ERROR - ❌ Error processing batch 245: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,159 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,160 - ERROR - ❌ Error processing batch 246: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,274 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,274 - ERROR - ❌ Error processing batch 247: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,391 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,392 - ERROR - ❌ Error processing batch 248: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,509 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,509 - ERROR - ❌ Error processing batch 249: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,624 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,624 - ERROR - ❌ Error processing batch 250: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,644 - ERROR - Error inserting data: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,644 - ERROR - ❌ Error processing batch 251: 400 Client Error: Bad Request for url: http://localhost:8123/?query=INSERT+INTO+amazon.reviews+FORMAT+TabSeparated
+2025-09-13 20:11:35,644 - INFO - 🎉 Data ingestion completed successfully!
+2025-09-13 20:11:35,644 - INFO - 📊 Total rows processed: 30,000
+2025-09-13 20:11:35,644 - INFO - ⏱️ Total duration: 31.12 seconds
+2025-09-13 20:11:35,644 - INFO - 🚀 Average speed: 964 rows/second
+2025-09-13 20:11:35,644 - INFO - 📦 Total batches: 251
+2025-09-13 20:11:35,649 - INFO - Verification query 1 executed successfully
+2025-09-13 20:11:35,659 - INFO - Verification query 2 executed successfully
+2025-09-13 20:11:35,742 - INFO - Verification query 3 executed successfully
+2025-09-13 20:11:35,854 - INFO - Verification query 4 executed successfully
+2025-09-13 20:11:35,861 - INFO - Verification query 5 executed successfully
+2025-09-13 20:11:35,868 - INFO - Verification query 6 executed successfully
+2025-09-13 20:11:35,868 - INFO - Data ingestion completed successfully
+2025-09-13 20:57:15,362 - INFO - ============================================================
+2025-09-13 20:57:15,365 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 20:57:15,366 - INFO - ============================================================
+2025-09-13 20:57:15,368 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 20:57:15,621 - INFO -  Amazon database created successfully
+2025-09-13 20:57:15,634 - INFO -  Reviews table created successfully with optimized schema
+2025-09-13 20:57:15,635 - INFO -  Table features:
+2025-09-13 20:57:15,636 - INFO -    - Engine: MergeTree (optimized for analytics)
+2025-09-13 20:57:15,637 - INFO -    - Ordering: (asin, timestamp, user_id) for duplicate prevention
+2025-09-13 20:57:15,638 - INFO -    - Materialized columns: review_date, review_year, review_month
+2025-09-13 20:57:15,639 - INFO -    - Primary key ensures no duplicate reviews
+2025-09-13 21:08:18,683 - INFO - ============================================================
+2025-09-13 21:08:18,684 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:08:18,684 - INFO - ============================================================
+2025-09-13 21:08:18,686 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:08:18,911 - ERROR -  Error creating database: 'NoneType' object has no attribute 'dispose'
+2025-09-13 21:11:09,397 - INFO - ============================================================
+2025-09-13 21:11:09,399 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:11:09,400 - INFO - ============================================================
+2025-09-13 21:11:09,403 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:11:09,405 - ERROR -  Error creating database: 'NoneType' object has no attribute 'dispose'
+2025-09-13 21:11:33,726 - INFO - ============================================================
+2025-09-13 21:11:33,728 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:11:33,730 - INFO - ============================================================
+2025-09-13 21:11:33,731 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:11:33,736 - ERROR -  Error creating database: 'NoneType' object has no attribute 'dispose'
+2025-09-13 21:14:28,431 - INFO - ============================================================
+2025-09-13 21:14:28,432 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:14:28,433 - INFO - ============================================================
+2025-09-13 21:14:28,435 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:14:28,438 - ERROR -  Error creating database: 'NoneType' object has no attribute 'dispose'
+2025-09-13 21:15:18,959 - INFO - ============================================================
+2025-09-13 21:15:18,960 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:15:18,961 - INFO - ============================================================
+2025-09-13 21:15:18,965 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:15:18,981 - INFO -  Amazon database created successfully
+2025-09-13 21:15:18,994 - INFO -  Reviews table created successfully with optimized schema
+2025-09-13 21:15:18,995 - INFO -  Table features:
+2025-09-13 21:15:18,995 - INFO -    - Engine: MergeTree (optimized for analytics)
+2025-09-13 21:15:18,996 - INFO -    - Ordering: (asin, timestamp, user_id) for duplicate prevention
+2025-09-13 21:15:18,997 - INFO -    - Materialized columns: review_date, review_year, review_month
+2025-09-13 21:15:18,997 - INFO -    - Primary key ensures no duplicate reviews
+2025-09-13 21:15:19,055 - INFO - 🔍 Checking existing data to prevent duplicates...
+2025-09-13 21:15:19,067 - WARNING -  Could not check existing data: the truth value of a DataFrame is ambiguous
+
+Hint: to check if a DataFrame contains any values, use `is_empty()`.
+2025-09-13 21:15:19,068 - INFO -  Starting data ingestion...
+2025-09-13 21:15:19,069 - INFO -  Batch size: 50,000 rows
+2025-09-13 21:15:19,372 - ERROR -  Error processing batch 1: 'DataFrame' object has no attribute 'to_pandas'
+2025-09-13 21:15:19,373 - ERROR -  Failed batch size: 50,000 rows
+2025-09-13 21:15:19,374 - ERROR -  Critical error during ingestion: 'DataFrame' object has no attribute 'to_pandas'
+2025-09-13 21:15:19,375 - ERROR -  Rows processed before failure: 0
+2025-09-13 21:15:19,375 - ERROR - 💥 INGESTION FAILED: 'DataFrame' object has no attribute 'to_pandas'
+2025-09-13 21:17:12,898 - INFO - ============================================================
+2025-09-13 21:17:12,899 - INFO - AMAZON FASHION REVIEWS DATA INGESTION STARTED
+2025-09-13 21:17:12,900 - INFO - ============================================================
+2025-09-13 21:17:12,901 - INFO -  ClickHouse connection established using dbutils
+2025-09-13 21:17:12,911 - INFO -  Amazon database created successfully
+2025-09-13 21:17:12,922 - INFO -  Reviews table created successfully with optimized schema
+2025-09-13 21:17:12,923 - INFO -  Table features:
+2025-09-13 21:17:12,924 - INFO -    - Engine: MergeTree (optimized for analytics)
+2025-09-13 21:17:12,924 - INFO -    - Ordering: (asin, timestamp, user_id) for duplicate prevention
+2025-09-13 21:17:12,925 - INFO -    - Materialized columns: review_date, review_year, review_month
+2025-09-13 21:17:12,926 - INFO -    - Primary key ensures no duplicate reviews
+2025-09-13 21:17:12,976 - INFO - 🔍 Checking existing data to prevent duplicates...
+2025-09-13 21:17:12,989 - WARNING -  Could not check existing data: the truth value of a DataFrame is ambiguous
+
+Hint: to check if a DataFrame contains any values, use `is_empty()`.
+2025-09-13 21:17:12,990 - INFO -  Starting data ingestion...
+2025-09-13 21:17:12,991 - INFO -  Batch size: 50,000 rows
+2025-09-13 21:17:13,300 - ERROR -  Error processing batch 1: 'DataFrame' object has no attribute 'to_pandas'
+2025-09-13 21:17:13,301 - ERROR -  Failed batch size: 50,000 rows
+2025-09-13 21:17:13,302 - ERROR -  Critical error during ingestion: 'DataFrame' object has no attribute 'to_pandas'
+2025-09-13 21:17:13,302 - ERROR -  Rows processed before failure: 0
+2025-09-13 21:17:13,303 - ERROR -  INGESTION FAILED: 'DataFrame' object has no attribute 'to_pandas'
